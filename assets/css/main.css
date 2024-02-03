@@ -629,12 +629,12 @@
 
 		.image.left {
 			float: left;
-			padding: 1em 1.5em 1em 1em;
+			padding: 1em 1em 1em 1em;
 			top: 0.25em;
 			
 		}
 		.image.left.verycircle{
-			border-radius: 360px;
+			border-radius: 600px;
 			float: left;
 			padding: 1em 1.5em 1em 1em;
 			top: 0.25em;
@@ -1183,7 +1183,7 @@
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
 		min-height: 70vh;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/bg2.jpg");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

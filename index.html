@@ -44,13 +44,14 @@
 							<div class="thumbnails">
 								
 								<div class="box">
-									<img class="image left verycircle" src="images/pic01.jpg" alt="" width="600" height="338">
+									<img class="image left verycircle" src="images/img0.jpg" alt="" width="250" height="350">
 									<div class="inner">
 										<br>
 										<h3>張伽銘</h3>
 										<p>Yuntech CSIE<br>
 											國立雲林科技大學 資訊工程系 大四<br>
-											程式語言:c++、java、sql、php、python、android app、html、css、javascript<br>
+											程式語言:c++、java、sql、php、python、android app、html、css、javascript、git<br>
+											yolov5影像辨識模型<br>
 											目前正在學習linux,ctf等資安相關技術<br>
 
 
@@ -61,7 +62,8 @@
 									
 									<div class="inner">
 										<h3>經歷&證照</h3>
-										<p>高中就讀:國立新竹高級工業職業學校 電機工程系<br>
+										<p>高中:國立新竹高級工業職業學校 電機工程系<br>
+											大學:國立雲林科技大學 資訊工程系 <br>
 											證照: 室內配線-丙級、工業電子-丙級、數位電子-乙級<br>
 											大學程式能力檢定(CPE):2022-03-22(3題)<br>
 										</p>
@@ -126,12 +128,72 @@
 										<a href="https://youtu.be/bWO2SMoDvfE" class="button small" data-poptrox="youtube,1200x800" target="_blank">youtubelink</a>
 										<br>
 										<br>
-										小遊戲和集
-										畢業專題
+										
 										</p>
 									</div>
 								</div>
-								
+								<div class="box">
+									
+									<div class="inner">
+										<br>
+										<h3>像素對決(Pixel duel)</h3>
+											
+										<p>這是一個使用html、css、js以及串接firebase資料庫來實現的線上對戰小遊戲，在初始介面設置了創建房間以及加入房間的功能，創立房間完後可以選擇3個職業遊玩，加入方準備好之後房主就能倒數進行遊戲，當有一方HP歸0則結束遊戲跳出勝負字樣跳回主頁面。<br>
+											<br>
+											
+											<br>
+											<a href="https://mutiplay-e4b78.web.app/pixelduel/pixelduel.html" target="_blank">成品網站連結</a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- 空格-->
+											<a href="https://hackmd.io/@88VgWBcqQTmpLh1ErwWrfQ/H1cvGkKSq" target="_blank">hackmd紀錄</a>
+											<br><br>
+											影片介紹0 ~ 5:44
+											<a href="https://www.youtube.com/watch?v=s_3E9zjm7Ms" class="button small" data-poptrox="youtube,1200x800" target="_blank">youtubelink</a>
+											<br><br><br>
+											
+											設計流程:遊戲開始後會loop檢查firebase上的資料是否更新，並且根據得到的資料渲染在html上，當輸入指令後資料會更新到firebase，再重新進入loop檢查渲染，當取得到的資料有一方HP為0後渲染出勝負字條跳回主頁。<br>
+											<img class="image left" src="images/img3.jpg" alt="" width="260" height="350">
+											<img class="image left" src="images/img4.jpg" alt="" width="420" height="280">
+											<img class="image left" src="images/img5.jpg" alt="" width="420" height="280">
+										</p>
+									</div>
+								</div>
+
+								<div class="box">
+									<div class="inner">
+									
+									<h3>基於影像辨識實做花生瑕疵檢測(大學畢業專題)</h3>
+									<img class="image left" src="images/img6.jpg" alt="" width="400" height="250">
+									<br><br>
+									
+									<p>本研究將所有花生樣本拍攝完，使用Label工具將花生分為好花生與壞花生兩大類標籤，然後使用YOLOV5演算法訓練出高準確度的模型，再將手機鏡頭與電腦連接，提高辨識的運算效能。<br>
+										<br><br><br><br><br>
+										研究流程:將花生樣本拍照取樣，使用makesense.ai這個網站將我們所拍攝的每顆花生標註上好花生或壞花生的label，
+										label是物件在圖片上的座標是給yolo做深度學習的材料明確的標定物片才能讓機器學習的更加精確，透過YOLOV5演算法做深度學習訓練，最後丟入不在資料集全新的花生照片測試來檢驗實際的效果。
+										<br>
+										訓練，我們選擇的是在google colab上運行，在眾多模型中我們使用了yolov5l模型做訓練，在數據評斷下他是最適合我們使用的模型，
+										<br><br>
+										<img class="image left" src="images/img11.jpg" alt="" width="200" height="350">
+										
+										<br>
+										<br>
+										<img class="image right" src="images/img10.jpg" alt="" width="350" height="250">
+										在設計初期我們的想法是在手機上就能進行偵測，我們使用了tensorflowlite框架裝上我們的模型來使用，TensorFlow Lite 是一種行動裝置程式庫，用於在行動裝置、微控制器和其他邊緣裝置上部署模型。<br>
+										
+										而當我們實作出來後發現在手機上運行的效能不太理想，因為手機的效能是有極限的<del>，我不做人拉jojo</del>
+										
+										<br><br><br><br><br><br>
+										一般而言使用預設啟動電腦鏡頭即可進行偵測，但由於筆電鏡頭所拍攝的畫面非常模糊以及各種使用上的不方便我們便另外尋找了利用外接設備來提升鏡頭的清晰度的方法，<br>
+										我們最終使用了利用[IPwebcam]這款APP搭配上手機能夠自由的移動還有高解析度的攝像頭來當作我們的外接攝像頭，這款APP在PLAY商店上就可以下載並且只要與電腦處在同一個網段就能夠讀取到畫面，
+										<br><br>我們還用python製作了一個簡易的開啟yolo偵測的activate_form。
+										<br>
+										<img class="image left" src="images/img9.jpg" alt="" width="350" height="250">
+										<img class="image left" src="images/img8.jpg" alt="" width="350" height="250">
+										<img class="image left" src="images/img7.jpg" alt="" width="350" height="250">
+										
+										
+									</p>
+									</div>
+								</div>
 							</div>
 						  </div>
 					  </div>
@@ -152,13 +214,16 @@
 
 			<!-- Footer -->
 				<footer id="footer"><div class="inner">
-						<h2>Etiam veroeros lorem</h2>
-						<p>Pellentesque eleifend malesuada efficitur. Curabitur volutpat dui mi, ac imperdiet dolor tincidunt nec. Ut erat lectus, dictum sit amet lectus a, aliquet rutrum mauris. Etiam nec lectus hendrerit, consectetur risus viverra, iaculis orci. Phasellus eu nibh ut mi luctus auctor. Donec sit amet dolor in diam feugiat venenatis. </p>
-
-						<ul class="icons"><li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						
+						<p>last update:2024-2-3</p>
+						<h2>contact me</h2>
+						<ul class="icons">
+							<li><a href="mailto:a28065872@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<!--
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							-->
 						</ul></div>
 				</footer><div class="copyright">
 				Site made with: <a href="https://templated.co/">Templated</a>.
