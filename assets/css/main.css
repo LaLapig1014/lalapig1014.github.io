@@ -668,7 +668,21 @@
 			.image.main img {
 				width: 100%;
 			}
+		@media screen and (max-width: 736px) {
 
+			.image.left.verycircle{
+				
+				width: auto;
+				height: auto;
+			}
+			.image.md{
+				width: auto;
+				height: auto;
+				min-width: 250px;
+				min-height: 200px;
+			}
+			
+		}
 /* List */
 
 	ol {
@@ -1443,3 +1457,12 @@
 #tab-demo > ul > li.active{ border-bottom:1px solid #fff; background:#fff;}
 #tab-demo > .tab-inner{ clear:both;  border:1px rgba(144, 144, 144, 0.075) solid;}
 .tab-inner{ padding:1px;}
+@media screen and (max-width: 736px) {
+
+	#tab-demo > ul > li{ 
+		width: 30%;
+		font-size: 26px;
+		padding:0 0px;
+	}
+
+}
