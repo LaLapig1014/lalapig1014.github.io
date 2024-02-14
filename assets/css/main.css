@@ -619,10 +619,14 @@
 		}
 
 		.image.left, .image.right{
+			width: auto;
+			height: auto;
+			
 			max-width: 40%;
 		}
 
 			.image.left img, .image.right img {
+				
 				width: 100%;
 				border-radius: 20px;
 			}
@@ -634,6 +638,11 @@
 			
 		}
 		.image.left.verycircle{
+			width: 30%;
+			height: auto;
+			min-width: 150px;
+			max-height: 350px;
+			max-width: 270px;
 			border-radius: 600px;
 			float: left;
 			padding: 1em 1.5em 1em 1em;
@@ -668,12 +677,14 @@
 			.image.main img {
 				width: 100%;
 			}
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 850px) {
 
 			.image.left.verycircle{
 				
 				width: auto;
 				height: auto;
+				max-width: 150px;
+				max-height: 200px;
 			}
 			.image.md{
 				width: auto;
