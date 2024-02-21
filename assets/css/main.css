@@ -1207,8 +1207,10 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
-		min-height: 70vh;
+		min-height: 80vh;
+		/*
 		background-image: url("../../images/bg2.jpg");
+		*/
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1304,7 +1306,7 @@
 				border: 1px solid #fff;
 				color: #FFF;
 			}
-
+			
 		#banner video {
 			-moz-transform: translateX(50%) translateY(50%);
 			-webkit-transform: translateX(50%) translateY(50%);
@@ -1318,8 +1320,10 @@
 			min-width: 100%;
 			min-height: 100%;
 			overflow: hidden;
+			
+			object-fit: cover;
 		}
-
+		
 		#banner:before {
 			-moz-transition: opacity 3s ease;
 			-webkit-transition: opacity 3s ease;
@@ -1343,9 +1347,7 @@
 
 		@media screen and (max-width: 1280px) {
 
-			#banner video {
-				display: none;
-			}
+			
 
 		}
 
@@ -1566,3 +1568,9 @@
 	font-size: 22px;
 	margin-bottom: 0;
 }
+/*
+#myvideo{
+	width: 100%;
+    height: auto;
+    object-fit: cover;
+}*/
