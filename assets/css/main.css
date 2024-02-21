@@ -973,7 +973,7 @@
 		background-color: #70c7be;
 		border-radius: 4px;
 		border: 0;
-		color: #ffffff !important;
+		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -1460,13 +1460,67 @@
 
 		}
 
-#tab-demo{  margin:0;text-align: center;}
-#tab-demo > ul{ display:block; margin:0;list-style:none;}
+
+.tabbtn{
+	background-color: #00000000;
+	color: #cf69f7; /* #cf69f7*/
+	font-size: 32px;
+	display:inline-block;
+	height:50px; 
+	line-height:40px; 
+	padding:0 0px;
+	width: fit-content;
+	justify-content: center;
+}
+
+.tabbtn:hover{
+	background-color: #00000000;
+	
+}
+
+
+#tab-demo{  
+	margin:0;
+	text-align: center;
+}
+#tab-demo > ul{ 
+	display:block;
+	 margin:0;
+	 list-style:none;
+	}
 .tab-title{list-style:none;font-size: 36px;}
-#tab-demo > ul > li{ display:inline-block; vertical-align:top;font-family:'微軟正黑體'; margin:0 -1px -1px 0 ; border:1px solid rgba(144, 144, 144, 0.5); height:50px; line-height:40px; background:rgba(144, 144, 144, 0.5);padding:0 30px;list-style:none; box-sizing:border-box;}
+#tab-demo > ul > li{ 
+	display:inline-block;
+	justify-content: center;
+	align-items: center;
+	vertical-align:top;
+	font-family:'微軟正黑體'; 
+	margin:0 -1px -1px 0 ; 
+	border:1px solid rgba(144, 144, 144, 0.5); 
+	height:50px; 
+	min-width: fit-content;
+	line-height:40px; 
+	background:rgba(144, 144, 144, 0.5);
+	padding:0 30px;
+	list-style:none; 
+	box-sizing:border-box;
+}
 #tab-demo >  ul > li a{ color:#000; text-decoration:none;}
-#tab-demo > ul > li.active{ border-bottom:1px solid #fff; background:#fff;}
-#tab-demo > .tab-inner{ clear:both;  border:1px rgba(144, 144, 144, 0.075) solid;}
+#tab-demo > ul > li.active{ 
+	border-bottom:1px solid #fff; 
+	background:#f4ff5bd5;
+	
+}
+#tab-demo > ul > li:hover{ 
+	background:#f2fc68; 
+}
+
+#tab-demo > .tab-inner{ 
+	clear:both;
+	border:1px rgba(201, 88, 88, 0.575) solid;
+	
+}
+
 .tab-inner{ padding:1px;}
 @media screen and (max-width: 736px) {
 
@@ -1476,4 +1530,39 @@
 		padding:0 0px;
 	}
 
+}
+
+@font-face {
+    font-family: "titlefont";
+    src: url("../fonts/BlackOpsOne-Regular.ttf");
+}
+
+#titleh1{
+	font-family: titlefont !important;
+	color: #7cf0e4 !important;
+	
+}
+#musicbtn{
+	border-radius: 25px;
+	background-color: #87c29bc2;
+	
+	height: 50px;
+	width: 50px;
+	background-image: url("../../images/music_ac.png");
+	background-size: contain;
+	border:2px #e964de solid;
+	margin-right: 20px;
+}
+#musicbtn:hover{
+	background-color: #5ec0b6;
+}
+#topdiv{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	
+}
+#musicname{
+	font-size: 22px;
+	margin-bottom: 0;
 }

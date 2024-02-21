@@ -3,7 +3,16 @@
 	Full Motion by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
---><html><head><title>LaLapig`s website</title><meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/main.css"></head><body id="top">
+--><html>
+	<head>
+	<title>LaLapig`s website</title>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="icon" href="images/aax1h-z0je6-001.ico" type="image/x-icon"/>
+</head>
+	<body id="top">
 
 			<!-- Banner -->
 			<!--
@@ -11,8 +20,14 @@
 				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
 				formats to work correctly.
 			-->
-				<section id="banner" data-video="images/banner"><div class="inner">
-						<header><h1>LaLapig`s website</h1>
+				<div id="topdiv">
+					<audio id="music" autoplay loop src="images/BulletsandFlowers.mp3"></audio>
+					<button id="musicbtn" onclick="togglemusic()"></button>
+					<p id="musicname">Moneyhesit Berlin-BulletsandFlowers</p>
+				</div>
+				<section id="banner" data-video="images/banner">
+					<div class="inner">
+						<header><h1 id="titleh1">LaLapig`s website</h1>
 							<p>this is my own website<br>
 							
 							
@@ -35,9 +50,9 @@
 					<!-- Boxes -->
 					<div id="tab-demo">
 						<ul class="tab-title">
-							<li><a href="#tab01">自我介紹</a></li>
-							<li><a href="#tab02">經歷</a></li>
-							<li><a href="#tab03">作品集</a></li>
+							<li><button href="#tab01" class="tabbtn">自我介紹</button></li>
+							<li><button href="#tab02" class="tabbtn">經歷</button></li>
+							<li><button href="#tab03" class="tabbtn">作品集</button></li>
 						  </ul>
 						  <div id="tab01" class="tab-inner">
 
@@ -243,6 +258,6 @@
 			<script src="assets/js/util.js"></script>
 
 			<script src="assets/js/main.js"></script>
-			
+			<script src="assets/js/myjs.js"></script>
 			</body>
 		</html>
