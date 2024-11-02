@@ -1,0 +1,205 @@
+
+#aaa {
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    
+    width:100%;
+    height:100%;
+    z-index:999;
+    background-color:#202024;
+    
+  }
+  #bbb {
+    position: relative;
+    margin: auto;
+    min-width:300px;
+    min-height: 420px;
+    z-index:5;
+    background-color:#727772c9;
+    border: solid 2px;
+    border-color: #b45d5a; /*#b45d5a #7fca98*/
+  }
+#ccc{
+  
+  margin-top: 0%;
+  height: 30px;
+  margin: auto;
+  width: 80%;
+  border: solid 2px;
+  border-color: rgba(204, 85, 85, 0.75);
+  border-radius: 30px;
+  background-color: #727772;
+}
+#ddd{
+  
+  height: 26px;
+  width: auto;
+  border-radius: 30px;
+  background-color:rgba(127, 255, 212, 0.781);
+  animation-name: progressbar;
+  /*animation-iteration-count: infinite;*/
+  animation-duration: 3s;
+  animation-timing-function:ease-in-out;
+}
+#eee{
+  margin-top: -12%;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(221, 116, 221);
+  display: flex;
+  justify-content: center; 
+}
+
+#fff{
+  position: relative;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  width: 80%;
+  height: 240px;
+  border-radius: 50%;
+  border: solid 3px #93d654;
+
+  animation-name: rt1;
+  animation-duration: 1.75s;
+  animation-timing-function:ease-in-out;
+  animation-play-state: paused;
+}
+#ggg{
+  display: flex;               
+  justify-content: center;     
+  align-items: center;  
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: solid 3px #e28f4c;
+  animation-name: rt2;
+  animation-duration: 1.75s;
+  animation-timing-function:ease-in-out;
+  animation-play-state: paused;
+}
+#hhh{
+  margin: auto;
+  margin-top: 13%;
+  width: 70%;
+  height: 70%;
+  
+  border: solid 3px #4cb7e2;
+  animation-name: rt3;
+  animation-duration: 1.5s;
+  animation-timing-function:ease-in-out;
+  animation-play-state: paused;
+}
+
+#iii{
+  justify-content: center;
+  position: absolute;
+  top:35%;
+  width:250px;
+  height:250px;
+  z-index:2;
+  background-color:#212f699d;
+  border: solid 2px;
+  border-radius:60%;
+  border-color: #222277;
+  opacity: 0.8;
+  
+}
+#zzz{
+
+
+  width: 210px;
+  height: 210px;
+}
+.fadein{
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-timing-function:ease-in-out;
+  animation-fill-mode: forwards;
+}
+.fadeout{
+  animation-name: fadeout;
+  animation-duration: 1s;
+  animation-timing-function:ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.pstr{
+  display: flex;
+  justify-content: center; 
+  font-size: 18px;
+  color: #d88383;
+  font-weight: bolder;
+}
+
+.animationcls{
+  animation-name:expend;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+}
+
+@keyframes progressbar{
+  0%{
+    width: 10%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+  
+@keyframes rt1{
+  0%{
+    transform: rotate3d(0,0,0,0);
+  }
+  100%{
+    transform: rotate3d(1,1,0,720deg);
+  }
+}
+@keyframes rt2{
+  0%{
+    transform: rotate3d(0,0,0,0);
+  }
+  100%{
+    transform: rotate3d(1,-1,1,720deg);
+  }
+}
+@keyframes rt3{
+  0%{
+    transform: rotate3d(0,0,0,0);
+  }
+  100%{
+    transform: rotate3d(-1,-3,2,720deg);
+  }
+}
+@keyframes expend{
+  0%{
+    transfrom:scale(1);
+  }
+  100%{
+    transform:scale(10);
+    background-color:#9eace79d;
+  }
+}
+@keyframes fadein{
+  
+  0%{
+    
+  }
+  30%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes fadeout{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}

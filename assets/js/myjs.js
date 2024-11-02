@@ -1,7 +1,8 @@
+/*
 window.onload=function(){
-    let ado=document.getElementById("music");
-    ado.volume=0.4;
-}
+    
+}*/
+
 function togglemusic(){
     let ado=document.getElementById("music");
     if(ado.paused){
