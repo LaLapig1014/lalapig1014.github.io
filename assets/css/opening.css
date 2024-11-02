@@ -100,7 +100,7 @@
   width:250px;
   height:250px;
   z-index:2;
-  background-color:#212f699d;
+  background-color:#212f6900;
   border: solid 2px;
   border-radius:60%;
   border-color: #222277;
@@ -176,6 +176,7 @@
 @keyframes expend{
   0%{
     transfrom:scale(1);
+    background-color:#212f699d;
   }
   100%{
     transform:scale(10);
