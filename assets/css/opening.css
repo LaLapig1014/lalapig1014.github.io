@@ -1,4 +1,4 @@
-#aaa {
+#opening_base {
   position: fixed;
   justify-content: center;
   display: flex;
@@ -10,7 +10,7 @@
 
 }
 
-#aaa_img {
+#opening_base_img {
   position: fixed;
   justify-content: center;
   display: flex;
@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 700px) {
 
-  #aaa_img {
+  #opening_base_img {
 
     background-image: url("../../images/cybg2.png");
     height: 100%;
@@ -35,7 +35,7 @@
 
 }
 
-#bbb {
+#opening_midbox {
   position: relative;
   margin: auto;
   min-width: 300px;
@@ -47,7 +47,7 @@
   /*#b45d5a #7fca98*/
 }
 
-#ccc {
+#opening_midbox_progress_base {
 
   margin-top: 0%;
   height: 30px;
@@ -56,10 +56,10 @@
   border: solid 2px;
   border-color: rgba(204, 85, 85, 0.75);
   border-radius: 30px;
-  background-color: #727772;
+  background-color: #575c57c9;
 }
 
-#ddd {
+#opening_midbox_progress_inner {
 
   height: 26px;
   width: auto;
@@ -71,7 +71,7 @@
   animation-timing-function: ease-in-out;
 }
 
-#eee {
+#opening_midbox_progress_text {
   margin-top: -12%;
   font-size: 20px;
   font-weight: bold;
@@ -80,7 +80,7 @@
   justify-content: center;
 }
 
-#fff {
+#opening_midbox_circle1 {
   position: relative;
   justify-content: center;
   display: flex;
@@ -96,7 +96,7 @@
   animation-play-state: paused;
 }
 
-#ggg {
+#opening_midbox_circle2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,12 @@
   animation-timing-function: ease-in-out;
   animation-play-state: paused;
 }
+#opening_midbox_logo {
 
+  width: 210px;
+  height: 210px;
+}
+/*
 #hhh {
   margin: auto;
   margin-top: 13%;
@@ -123,8 +128,17 @@
   animation-timing-function: ease-in-out;
   animation-play-state: paused;
 }
+  */
+#opening_midbox_showtext{
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: #d88383;
+}
 
-#iii {
+
+#opening_midbox_fadecircle {
   justify-content: center;
   position: absolute;
   top: 35%;
@@ -143,12 +157,6 @@
 
 }
 
-#zzz {
-
-
-  width: 210px;
-  height: 210px;
-}
 
 .fadein {
   animation-name: fadein;
@@ -171,7 +179,7 @@
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
-
+/*
 .pstr {
   display: flex;
   justify-content: center;
@@ -179,7 +187,7 @@
   color: #d88383;
   font-weight: bolder;
 }
-
+*/
 .animationcls {
   animation-name: expend;
   animation-fill-mode: forwards;

@@ -7,36 +7,36 @@ window.onload=function(){
     
 }
 
-document.getElementById("ddd").addEventListener("animationstart", () => {
+document.getElementById("opening_midbox_progress_inner").addEventListener("animationstart", () => {
     //console.log("Animation started");
     pstr();
     let countn=0;
-    let ee=document.getElementById("eee");
+    let ee=document.getElementById("opening_midbox_progress_text");
     let countinterval=setInterval(function () {
         ee.innerHTML = countn+"%";
         countn+=1;
         if(countn>100){
             clearInterval(countinterval);
-            document.getElementById("fff").style.animationPlayState="running";
-            document.getElementById("ggg").style.animationPlayState="running";
+            document.getElementById("opening_midbox_circle1").style.animationPlayState="running";
+            document.getElementById("opening_midbox_circle2").style.animationPlayState="running";
             //document.getElementById("hhh").style.animationPlayState="running";
-            document.getElementById("bbb").style.borderColor="#7fca98";
+            document.getElementById("opening_midbox").style.borderColor="#7fca98";
         }
     },40)
 });
 
-document.getElementById("fff").addEventListener("animationend", () => {
+document.getElementById("opening_midbox_circle1").addEventListener("animationend", () => {
     //console.log("Animation end");
-    document.getElementById("iii").classList.add("animationcls");
+    document.getElementById("opening_midbox_fadecircle").classList.add("animationcls");
     //document.getElementById("iii").style.left=document.getElementById("hhh").style.left;
     //document.getElementById("iii").style.top=document.getElementById("hhh").style.top;
-    document.getElementById("aaa").classList.add("fadein");
+    document.getElementById("opening_base").classList.add("fadein");
 
 });
 document.addEventListener("animationend", (evnet) => {
     //console.log(evnet.animationName,evnet.target.id);
-    if(evnet.animationName=="fadein" && evnet.target.id=="aaa"){
-        document.getElementById("aaa").remove();
+    if(evnet.animationName=="fadein" && evnet.target.id=="opening_base"){
+        document.getElementById("opening_base").remove();
         //console.log("dele");
         let ado=document.getElementById("music");
         //console.log(ado);
@@ -47,13 +47,13 @@ document.addEventListener("animationend", (evnet) => {
 });
 
 function btc(){
-    document.getElementById("iii").classList.add("animationcls");
+    document.getElementById("opening_midbox_fadecircle").classList.add("animationcls");
     setTimeout(function(){
-        document.getElementById("iii").classList.remove("animationcls");
+        document.getElementById("opening_midbox_fadecircle").classList.remove("animationcls");
     },1600);
 }
 function pstr(){
-    let el=document.getElementById("jjj");
+    let el=document.getElementById("opening_midbox_showtext");
 
     setTimeout(function(){
         pstr2("Initialization...");
@@ -72,7 +72,7 @@ function pstr(){
     
 }
 function pstr2(ins){
-    let el=document.getElementById("jjj");
+    let el=document.getElementById("opening_midbox_showtext");
     let showtext = setInterval(function(){
         if(ins != ""){
             
