@@ -22,7 +22,7 @@ document.getElementById("ddd").addEventListener("animationstart", () => {
             //document.getElementById("hhh").style.animationPlayState="running";
             document.getElementById("bbb").style.borderColor="#7fca98";
         }
-    },30)
+    },40)
 });
 
 document.getElementById("fff").addEventListener("animationend", () => {
@@ -62,11 +62,11 @@ function pstr(){
     setTimeout(function(){
         el.innerHTML=el.innerHTML+"<br>";
         pstr2("Verifying...");
-    },1050);
+    },1450);
     setTimeout(function(){
         el.innerHTML=el.innerHTML+"<br>";
         pstr2("Permission Allowed");
-    },2050);
+    },2650);
     
     
     
