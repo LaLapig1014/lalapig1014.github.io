@@ -22,7 +22,7 @@ document.getElementById("opening_midbox_progress_inner").addEventListener("anima
             //document.getElementById("hhh").style.animationPlayState="running";
             document.getElementById("opening_midbox").style.borderColor="#7fca98";
         }
-    },40)
+    },30)
 });
 
 document.getElementById("opening_midbox_circle1").addEventListener("animationend", () => {
@@ -62,11 +62,11 @@ function pstr(){
     setTimeout(function(){
         el.innerHTML=el.innerHTML+"<br>";
         pstr2("Verifying...");
-    },1450);
+    },950);
     setTimeout(function(){
         el.innerHTML=el.innerHTML+"<br>";
         pstr2("Permission Allowed");
-    },2650);
+    },2150);
     
     
     

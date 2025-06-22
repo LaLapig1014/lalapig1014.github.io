@@ -80,6 +80,11 @@
 
 	body {
 		background: #202024;
+		/*
+		background-image: url("../../images/bg2.jpg");
+		background-repeat: no-repeat;
+  		background-size: 100% 100%;
+		*/
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1580,7 +1585,7 @@
 	
 	height: 50px;
 	width: 50px;
-	background-image: url("../../images/music_ac.png");
+	background-image: url("../../images/music_na.png");
 	background-size: contain;
 	border:2px #e964de solid;
 	margin-right: 20px;
@@ -1592,7 +1597,7 @@
 	display: flex;
 	align-items: center;
     justify-content: center;
-	
+	background: #202024;
 }
 #musicname{
 	font-size: 22px;
